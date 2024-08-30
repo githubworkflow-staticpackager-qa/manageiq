@@ -18,7 +18,7 @@
 
 ## Discover, Optimize, and Control your Hybrid IT
 
-### Manage containers, virtual machines, networks, and storage from a single platform
+### Manage containers, virtual machines, networks, and storage from a single platform                    
 
 ManageIQ is an open-source Management Platform that delivers the insight, control, and
 automation that enterprises need to address the challenges of managing hybrid
