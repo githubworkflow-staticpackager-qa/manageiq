@@ -18,7 +18,7 @@
 
 ## Discover, Optimize, and Control your Hybrid IT     test 2  test 3 test4
 
-### Manage containers, virtual machines, networks, and storage from a single platform    test after
+### Manage containers, virtual machines, networks, and storage from a single platform    test after updated bundler version
 
 
 ManageIQ is an open-source Management Platform that delivers the insight, control, and
