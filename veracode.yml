@@ -42,7 +42,7 @@ veracode_static_scan:
   ruby_version: '3.1.0'
   bundle_version: '2.5.18'
   build_predependency_command: |
-    sudo gem install rugged -v '1.5.1'
+    gem install rugged -v '1.5.1'
 
 veracode_sca_scan:
   push:
