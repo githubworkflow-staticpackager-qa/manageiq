@@ -1,3 +1,20 @@
+
+actions:
+  ruby:
+    version: 3.2.0
+    bundle: 2.5.7
+  veracode_static_scan:
+    build:
+      runs_on:
+      packager_image: veracode/scm-packaging:3.0.0
+      #predependency_command: |
+        
+  veracode_sca_scan:
+    build:
+      runs_on:
+      packager_image:
+      #predependency_command: |
+      
 veracode_static_scan:
   push:
     trigger: true
@@ -8,7 +25,7 @@ veracode_static_scan:
       - '*'
     branches_to_exclude:
   pull_request:
-    trigger: true
+    trigger: false
     action:
       - opened
       - synchronize
@@ -37,13 +54,6 @@ veracode_static_scan:
     trigger: false
     commands:
       - "Veracode Static Scan"
-  #Ruby Support
-  actions_packager_image: janthony1986/scm-packaging:1.2.3
-  ruby_version: '3.1.0'
-  bundle_version: '2.5.18'
-  build_predependency_command: |
-    apt-get install -y cmake
-    gem install rugged -v '1.5.1'
 
 veracode_sca_scan:
   push:
@@ -82,7 +92,7 @@ veracode_iac_secrets_scan:
       - '*'
     branches_to_exclude:
   pull_request:
-    trigger: false
+    trigger: true
     action:
       - opened
       - synchronize
